@@ -22,10 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    screen.add(ContactsScreen());
-    screen.add(CallsScreen());
-    screen.add(ChatsScreen());
-    screen.add(SettingsScreen());
+    screen.add(const ContactsScreen());
+    screen.add(const CallsScreen());
+    screen.add(const ChatsScreen());
+    screen.add(const SettingsScreen());
     super.initState();
   }
 

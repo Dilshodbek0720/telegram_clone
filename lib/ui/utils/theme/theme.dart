@@ -7,7 +7,7 @@ class AppTheme {
       appBarTheme: const AppBarTheme(
         elevation: 0,
         iconTheme: IconThemeData(
-          color: Colors.white
+          color: Colors.white,
         ),
           backgroundColor: Colors.black,
           systemOverlayStyle: SystemUiOverlayStyle(
@@ -28,7 +28,7 @@ class AppTheme {
       appBarTheme: const AppBarTheme(
         elevation: 0,
           iconTheme: IconThemeData(
-              color: Colors.black
+              color: Colors.blue
           ),
           backgroundColor: Colors.white,
           systemOverlayStyle: SystemUiOverlayStyle(

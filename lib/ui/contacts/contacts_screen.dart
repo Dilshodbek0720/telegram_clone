@@ -7,7 +7,8 @@ class ContactsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Contacts"),
+        title: Text("Contacts", style: Theme.of(context).textTheme.titleLarge,),
+        centerTitle: true,
       ),
     );
   }

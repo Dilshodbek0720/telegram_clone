@@ -7,7 +7,8 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Settings"),
+        title: Text("Settings", style: Theme.of(context).textTheme.titleLarge,),
+        centerTitle: true,
       ),
     );
   }
