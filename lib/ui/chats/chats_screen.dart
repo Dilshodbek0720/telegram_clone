@@ -14,7 +14,7 @@ class ChatsScreen extends StatelessWidget {
         title: Text("Chats", style: Theme.of(context).textTheme.titleLarge,),
         centerTitle: true,
         actions: [
-          IconButton(onPressed: (){ }, icon: SizedBox(height: 20, width: 20, child: SvgPicture.asset(AppImages.editIcon, color: Theme.of(context).iconTheme.color,),)),
+          IconButton(onPressed: (){ }, icon: SizedBox(height: 20, width: 20, child: SvgPicture.asset(AppImages.editIcon))),
           const SizedBox(width: 8,),
         ],
       ),

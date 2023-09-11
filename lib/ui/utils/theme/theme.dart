@@ -13,7 +13,7 @@ class AppTheme {
           systemOverlayStyle: SystemUiOverlayStyle(
               statusBarColor: Colors.black,
               statusBarIconBrightness: Brightness.light)),
-      iconTheme: const IconThemeData(color: Colors.grey),
+      iconTheme: const IconThemeData(color: Colors.white),
       textTheme: const TextTheme(
         titleLarge: TextStyle(
             color: Colors.white, fontSize: 16, fontWeight: FontWeight.w500),
@@ -34,7 +34,7 @@ class AppTheme {
           systemOverlayStyle: SystemUiOverlayStyle(
               statusBarColor: Colors.white,
               statusBarIconBrightness: Brightness.dark)),
-      iconTheme: const IconThemeData(color: Colors.grey),
+      iconTheme: const IconThemeData(color: Colors.blue),
       textTheme: const TextTheme(
         titleLarge: TextStyle(
           color: Colors.black,

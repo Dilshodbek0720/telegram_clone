@@ -17,7 +17,6 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
   int selectedScreen = 0;
-
   List screen = [];
 
   @override
@@ -37,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
         items: [
           BottomNavigationBarItem(icon: SizedBox(height: 24, width: 24,child: SvgPicture.asset(AppImages.contacts),), label: "Contacts"),
           BottomNavigationBarItem(icon: SizedBox(height: 24, width: 24,child: SvgPicture.asset(AppImages.calls),), label: "Calls"),
-          BottomNavigationBarItem(icon: SizedBox(height: 24, width: 24,child: SvgPicture.asset(AppImages.chats),), label: "Chats"),
+          BottomNavigationBarItem(icon: SizedBox(height: 24, width: 24,child: SvgPicture.asset(AppImages.chats,),), label: "Chats"),
           BottomNavigationBarItem(icon: SizedBox(height: 24, width: 24,child: Image.asset(AppImages.profile),), label: "Settings"),
         ],
         onTap: (v){
