@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:telegram_clone/ui/calls/calls_screen.dart';
 import 'package:telegram_clone/ui/chats/chats_screen.dart';
@@ -31,6 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).primaryColorDark,
       body: screen[selectedScreen],
       bottomNavigationBar: BottomNavigationBar(
         items: [

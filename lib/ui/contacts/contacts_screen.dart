@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:telegram_clone/ui/contacts/widgets/contact_item.dart';
 import 'package:telegram_clone/ui/contacts/widgets/contact_models.dart';
@@ -11,6 +12,10 @@ class ContactsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: Theme.of(context).primaryColorDark,
+        ),
+        backgroundColor: Theme.of(context).primaryColorDark,
         title: Text("Contacts", style: Theme.of(context).textTheme.titleLarge,),
         centerTitle: true,
         actions: [
@@ -23,7 +28,7 @@ class ContactsScreen extends StatelessWidget {
             title: Text("Add People Nearby", style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 17, fontWeight: FontWeight.w400),),
           ),
           ListTile(leading: SizedBox(height: 24, width: 24, child: SvgPicture.asset(AppImages.inviteIcon),),
-            title: Text("Add People Nearby", style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 17, fontWeight: FontWeight.w400),),
+            title: Text("Invite Friends", style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 17, fontWeight: FontWeight.w400),),
           ),
           ...List.generate(contactsModel.length, (index) => ContactItem(contactTitle: contactsModel[index].contactTitle, contactSubtitle: contactsModel[index].contactSubtitle, contactImage: contactsModel[index].contactImage)),
           const SizedBox(height: 10,)

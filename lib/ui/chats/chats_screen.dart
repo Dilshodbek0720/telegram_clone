@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:telegram_clone/ui/chats/widgets/chat_item.dart';
 import 'package:telegram_clone/ui/chats/widgets/chats_models.dart';
@@ -17,6 +18,10 @@ class ChatsScreen extends StatelessWidget {
           IconButton(onPressed: (){ }, icon: SizedBox(height: 20, width: 20, child: SvgPicture.asset(AppImages.editIcon))),
           const SizedBox(width: 8,),
         ],
+        systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarColor: Theme.of(context).primaryColorDark
+        ),
+        backgroundColor: Theme.of(context).primaryColorDark,
       ),
       body: ListView(
         children: [

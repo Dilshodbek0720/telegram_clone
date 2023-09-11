@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:telegram_clone/ui/utils/colors/app_colors.dart';
 
 class AppTheme {
   static final ThemeData darkTheme = ThemeData(
@@ -21,6 +22,7 @@ class AppTheme {
         titleSmall: TextStyle(color: Colors.white, fontSize: 12),
       ),
       primaryColor: Colors.white,
+      primaryColorDark: AppColors.c3D3D3F,
       brightness: Brightness.dark);
 
   static final ThemeData lightTheme = ThemeData(
@@ -45,5 +47,6 @@ class AppTheme {
         titleSmall: TextStyle(color: Colors.black, fontSize: 12),
       ),
       primaryColor: Colors.black,
+      primaryColorDark: AppColors.cA6A6AA.withOpacity(0.2),
       brightness: Brightness.light);
 }
