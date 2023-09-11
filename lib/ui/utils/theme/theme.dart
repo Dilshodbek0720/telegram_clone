@@ -23,6 +23,7 @@ class AppTheme {
       ),
       primaryColor: Colors.white,
       primaryColorDark: AppColors.c3D3D3F,
+
       brightness: Brightness.dark);
 
   static final ThemeData lightTheme = ThemeData(

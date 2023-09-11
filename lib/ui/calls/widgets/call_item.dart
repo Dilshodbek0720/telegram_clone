@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:telegram_clone/ui/calls/widgets/call_models.dart';
-
 import '../../utils/colors/app_colors.dart';
 
 class CallItem extends StatelessWidget {
@@ -19,9 +18,9 @@ class CallItem extends StatelessWidget {
           width: 65,
           child: Center(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const SizedBox(height: 11, width: 11, child: Icon(Icons.phone_callback_outlined),),
+                const SizedBox(height: 10, width: 10, child: Icon(Icons.phone_callback_outlined, color: Color(0xFF48484A),),),
+                const Spacer(),
                 const SizedBox(width: 10,),
                 SizedBox(height: 40, width: 40, child: Image.asset(callModel.callImage),),
               ],

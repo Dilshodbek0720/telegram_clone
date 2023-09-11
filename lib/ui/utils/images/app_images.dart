@@ -29,4 +29,12 @@ class AppImages{
   static String infoIcon = "assets/svg/info_icon.svg";
   static String inviteIcon = "assets/svg/invite.svg";
   static String locationIcon = "assets/svg/location.svg";
+  static String dataIcon = "assets/svg/data.svg";
+  static String designIcon = "assets/svg/design.svg";
+  static String recentIcon = "assets/svg/recent.svg";
+  static String savedIcon = "assets/svg/saved.svg";
+  static String securityIcon = "assets/svg/security.svg";
+  static String soundsIcon = "assets/svg/sounds.svg";
+  static String stickerIcon = "assets/svg/sticker.svg";
+  static String appearanceIcon = "assets/svg/appearance.svg";
 }

@@ -37,7 +37,7 @@ class CallsScreen extends StatelessWidget {
           ),
         ),
         centerTitle: true,
-        leading: TextButton(onPressed: (){ }, child: Text("Edit", style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 17, fontWeight: FontWeight.w400),)),
+        leading: TextButton(onPressed: (){ }, child: Text("Edit", style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 17, fontWeight: FontWeight.w400, color: Theme.of(context).iconTheme.color),)),
         actions: [
           IconButton(onPressed: (){ }, icon: SizedBox(height: 22, width: 22, child: SvgPicture.asset(AppImages.callIcon),)),
           const SizedBox(width: 10,)
