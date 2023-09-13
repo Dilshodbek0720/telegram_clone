@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:telegram_clone/ui/settings/wdgets/setting_item.dart';
 import 'package:telegram_clone/ui/utils/colors/app_colors.dart';
 import 'package:telegram_clone/ui/utils/images/app_images.dart';

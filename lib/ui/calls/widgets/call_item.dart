@@ -15,11 +15,15 @@ class CallItem extends StatelessWidget {
         subtitle: Text(callModel.callSubtitle, style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w400, fontSize: 13,color: AppColors.c7E7E82),),
         leading: SizedBox(
           height: 40,
-          width: 65,
+          width: 70,
           child: Center(
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 10, width: 10, child: Icon(Icons.phone_callback_outlined, color: Color(0xFF48484A),),),
+                Container(height: 10, width: 10,
+                  margin: const EdgeInsets.only(bottom: 5, right: 5),
+                  child: const Icon(Icons.phone_callback_outlined, color: Color(0xFF48484A),),),
                 const Spacer(),
                 const SizedBox(width: 10,),
                 SizedBox(height: 40, width: 40, child: Image.asset(callModel.callImage),),
@@ -30,7 +34,8 @@ class CallItem extends StatelessWidget {
         trailing: SizedBox(
           height: 20,
           width: 74,
-          child: Row(children: [
+          child: Row(
+            children: [
             const Spacer(),
             Text(callModel.time, style: Theme.of(context).textTheme.titleMedium?.copyWith(fontSize: 15, fontWeight: FontWeight.w400,color: AppColors.c7E7E82),),
             const SizedBox(width: 8,),
