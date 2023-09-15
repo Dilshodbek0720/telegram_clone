@@ -17,7 +17,7 @@ class MainApp extends StatelessWidget {
     return AdaptiveTheme(
       light: AppTheme.lightTheme,
       dark: AppTheme.darkTheme,
-      initial: AdaptiveThemeMode.light,
+      initial: AdaptiveThemeMode.system,
       builder: (theme, darkTheme){
         return MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -27,6 +27,7 @@ class MainApp extends StatelessWidget {
           darkTheme: darkTheme,
         );
       },
+      debugShowFloatingThemeButton: true,
     );
   }
 }
